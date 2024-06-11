@@ -7,13 +7,98 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/txtNumTicket"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Número de ticket"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="43dp" />
 
+    <EditText
+        android:id="@+id/txtTitulo"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Título"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <EditText
+        android:id="@+id/txtAutor"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Autor"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Descripción"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <EditText
+        android:id="@+id/txtEmailAutor"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Email de autor"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <EditText
+        android:id="@+id/txtFechaCreacionTicket"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Fecha de creación"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <EditText
+        android:id="@+id/txtEstadoTicket"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Estado de ticket"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <EditText
+        android:id="@+id/txtFechaFinalTicket"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Fecha de finalización"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <Button
+        android:id="@+id/btnAgregarTicket"
+        android:layout_width="117dp"
+        android:layout_height="58dp"
+        android:text="Agregar"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="421dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvTicket"
+        android:layout_width="407dp"
+        android:layout_height="215dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="515dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
